@@ -16,7 +16,7 @@ NavBar::begin([
     'containerOptions' => [
         'class' => 'navbar-buttons navbar-header pull-right hidden-xs',
     ],
-    'brandLabel' => '<small><i class="ace-icon fa fa-dollar"></i> ' . ($siteName = Yii::$app->params['siteName']) . '</small>',
+    'brandLabel' => '<small><i class="ace-icon fa fa-dollar"></i> ' . (isset(Yii::$app->params['siteName']) ? Yii::$app->params['siteName'] : '') . '</small>',
     'brandUrl' => Yii::$app->homeUrl,
 ]);
 

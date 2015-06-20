@@ -14,7 +14,7 @@ tsace\AceAsset::register($this);
     <meta charset="<?= Yii::$app->charset ?>"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-    <title><?= Html::encode($this->title. ' - ' . Yii::$app->params['siteName']) ?></title>
+    <title><?= Html::encode($this->title. ' - ' . (isset(Yii::$app->params['siteName']) ? Yii::$app->params['siteName'] : '')) ?></title>
     <?= Html::csrfMetaTags() ?>
     <?php $this->head() ?>
 </head>
