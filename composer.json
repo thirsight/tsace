@@ -1,0 +1,21 @@
+{
+    "name": "tsace/tsace",
+    "description": "Ace admin template for yii2",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","ace admin template"],
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "Haisen",
+            "email": "thirsight@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "tsace\\": ""
+        }
+    }
+}
