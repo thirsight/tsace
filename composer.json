@@ -9,13 +9,5 @@
             "name": "Haisen",
             "email": "thirsight@gmail.com"
         }
-    ],
-    "require": {
-        "yiisoft/yii2": "*"
-    },
-    "autoload": {
-        "psr-4": {
-            "tsace\\": ""
-        }
-    }
+    ]
 }
