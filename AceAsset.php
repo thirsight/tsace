@@ -27,6 +27,8 @@ use yii\web\View;
  *         'theme' => [
  *             'pathMap' => [
  *                 '@app/views' => '@tsace/views',
+ *                 '@tsace/views' => '@mdm/admin/themes/ace',
+ *                 '@mdm/admin/views' => '@mdm/admin/themes/ace',
  *             ],
  *         ],
  *     ],
