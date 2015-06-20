@@ -27,7 +27,7 @@ $menuItems = [
         'linkOptions' => ['target' => '_blank']
     ],
     [
-        'label' => '<i class="ace-icon fa fa-sign-out"></i> Logout (' . Yii::$app->user->identity->username . ')',
+        'label' => '<i class="ace-icon fa fa-sign-out"></i> Logout (' . (isset(Yii::$app->user->identity->username) ? Yii::$app->user->identity->username : '') . ')',
         'url' => ['/fuckme/logout'],
         'linkOptions' => ['data-method' => 'post'],
     ],

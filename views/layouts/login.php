@@ -35,7 +35,24 @@ tsace\AceAsset::register($this);
                         <div class="space-6"></div>
 
                         <div class="position-relative">
-                            <?= $content ?>
+
+                            <div id="login-box" class="login-box visible widget-box no-border">
+                                <div class="widget-body">
+                                    <div class="widget-main">
+
+                                        <h4 class="header blue lighter bigger">
+                                            <i class="ace-icon fa fa-coffee green"></i>
+                                            Please Enter Your Information
+                                        </h4>
+
+                                        <div class="space-6"></div>
+
+                                        <?= $content ?>
+
+                                    </div><!-- /.widget-main -->
+                                </div><!-- /.widget-body -->
+                            </div><!-- /.login-box -->
+
                         </div><!-- /.position-relative -->
 
                     </div>
