@@ -7,7 +7,7 @@ NavBar::begin([
     'options' => [
         'tag' => 'div',
         'id' => 'navbar',
-        'class' => 'navbar-inverse navbar-fixed-top navbar-default',
+        'class' => 'navbar-inverse navbar-default',
     ],
     'innerContainerOptions' => [
         'id' => 'navbar-container',
