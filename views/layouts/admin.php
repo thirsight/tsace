@@ -6,6 +6,7 @@ use yii\widgets\Breadcrumbs;
 /* @var $content string */
 
 tsace\AceAsset::register($this);
+yii\web\YiiAsset::register($this);
 $this->registerJs('$("#sidebar").find("li.active").parents("li.active").addClass("open");');
 ?>
 <?php $this->beginPage() ?>
