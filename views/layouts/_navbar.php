@@ -24,11 +24,13 @@ $menuItems = [
     [
         'label' => '<i class="ace-icon fa fa-home"></i> Home',
         'url' => (isset(Yii::$app->params['frontUrl']) ? Yii::$app->params['frontUrl'] : '###'),
+        'options' => ['class' => 'light-10'],
         'linkOptions' => ['target' => '_blank']
     ],
     [
         'label' => '<i class="ace-icon fa fa-sign-out"></i> Logout (' . (isset(Yii::$app->user->identity->username) ? Yii::$app->user->identity->username : '') . ')',
         'url' => ['/fuckme/logout'],
+        'options' => ['class' => 'light-10'],
         'linkOptions' => ['data-method' => 'post'],
     ],
 ];
