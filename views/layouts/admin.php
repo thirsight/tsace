@@ -6,6 +6,7 @@ use yii\widgets\Breadcrumbs;
 /* @var $content string */
 
 tsace\AceAsset::register($this);
+$this->registerJs('$("#sidebar").find("li.active").parents("li.active").addClass("open");');
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -58,4 +59,4 @@ tsace\AceAsset::register($this);
     <?php $this->endBody() ?>
 </body>
 </html>
-<?php $this->endPage() ?>
+<?php $this->endPage();
