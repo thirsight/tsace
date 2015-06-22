@@ -19895,3 +19895,8 @@ input.typeahead.scrollable ~ .tt-dropdown-menu {
         display: none !important;
     }
 }
+
+/* By haisen */
+.not-set {
+    color: #bbbbbb;
+}
