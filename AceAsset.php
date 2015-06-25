@@ -1,6 +1,6 @@
 <?php
 
-namespace tsace;
+namespace ts\ace;
 
 use yii\web\View;
 
@@ -12,12 +12,12 @@ use yii\web\View;
  * ~~~
  * 'layout' => 'admin',
  * 'aliases' => [
- *     '@tsace'  => '@common/soft/tsace'
+ *     '@ts/ace'  => '@common/soft/ts/ace'
  * ],
  * 'components' => [
  *     'assetManager' => [
  *         'bundles' => [
- *             'yii\web\JqueryAsset' => ['sourcePath' => null, 'js' => [], 'depends' => ['tsace\AceAsset']],
+ *             'yii\web\JqueryAsset' => ['sourcePath' => null, 'js' => [], 'depends' => ['ts\ace\AceAsset']],
  *             'yii\bootstrap\BootstrapAsset' => false,
  *             'yii\bootstrap\BootstrapThemeAsset' => false,
  *             'yii\bootstrap\BootstrapPluginAsset' => false,
@@ -26,8 +26,8 @@ use yii\web\View;
  *     'view' => [
  *         'theme' => [
  *             'pathMap' => [
- *                 '@app/views' => '@tsace/views',
- *                 '@tsace/views' => '@mdm/rbac/themes/ace',
+ *                 '@app/views' => '@ts/ace/views',
+ *                 '@ts/ace/views' => '@mdm/rbac/themes/ace',
  *                 '@mdm/rbac/views' => '@mdm/rbac/themes/ace',
  *             ],
  *         ],
@@ -38,9 +38,9 @@ use yii\web\View;
  * @author Haisen <thirsight@gmail.com>
  * @since 1.0
  */
-class AceAsset extends \tsace\AssetBundle
+class AceAsset extends \ts\ace\AssetBundle
 {
-    public $sourcePath = '@tsace/assets';
+    public $sourcePath = '@ts/ace/assets';
 
     public $cssEnhance = [
         'css/ts-bootstrap.css',

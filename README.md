@@ -1,4 +1,4 @@
-# tsace
+# ts-ace
 Ace admin theme for yii2
 
 bootstrap configuration

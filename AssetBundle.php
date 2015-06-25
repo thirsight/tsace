@@ -1,6 +1,6 @@
 <?php
 
-namespace tsace;
+namespace ts\ace;
 
 class AssetBundle extends \yii\web\AssetBundle
 {

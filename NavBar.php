@@ -1,6 +1,6 @@
 <?php
 
-namespace tsace;
+namespace ts\ace;
 
 use Yii;
 use yii\bootstrap\Widget;

@@ -4,7 +4,7 @@ use yii\helpers\Html;
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-tsace\AceAsset::register($this);
+ts\ace\AceAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>

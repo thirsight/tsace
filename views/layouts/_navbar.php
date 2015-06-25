@@ -1,6 +1,6 @@
 <?php
 
-use tsace\NavBar;
+use ts\ace\NavBar;
 use yii\bootstrap\Nav;
 
 NavBar::begin([

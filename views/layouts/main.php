@@ -5,7 +5,7 @@ use yii\widgets\Breadcrumbs;
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-tsace\AceAsset::register($this);
+ts\ace\AceAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
