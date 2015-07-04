@@ -23,7 +23,7 @@ NavBar::begin([
 $menuItems = [
     [
         'label' => '<i class="ace-icon fa fa-home"></i> Home',
-        'url' => (isset(Yii::$app->params['frontUrl']) ? Yii::$app->params['frontUrl'] : '###'),
+        'url' => (isset(Yii::$app->params['siteUrl']) ? Yii::$app->params['siteUrl'] : '###'),
         'options' => ['class' => 'light-10'],
         'linkOptions' => ['target' => '_blank']
     ],
