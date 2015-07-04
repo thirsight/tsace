@@ -16,7 +16,7 @@ class Filter
      */
     public static function stripBlank($str)
     {
-        return preg_replace('#\s+#', '', $str);
+        return preg_replace('#\s+#', '', trim($str));
     }
 
     /**
@@ -27,6 +27,6 @@ class Filter
      */
     public static function mergeBlank($str)
     {
-        return preg_replace('#(\s)+#', '$1', $str);
+        return preg_replace('#(\s)+#', '$1', trim($str));
     }
 }
