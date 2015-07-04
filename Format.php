@@ -8,6 +8,10 @@ namespace ts\base;
  */
 class Format
 {
+    /**
+     * @param $value
+     * @return string
+     */
     public static function asTimePeriod($value)
     {
         if (preg_match('#^(\d+)-(\d+)$#', $value, $m)) {

@@ -8,13 +8,25 @@ namespace ts\base;
  */
 class Filter
 {
-    public static function stripBlank($value)
+    /**
+     * 过滤掉字符串中所有的空格、换行
+     *
+     * @param $str
+     * @return mixed
+     */
+    public static function stripBlank($str)
     {
-        return preg_replace('#\s+#', '', $value);
+        return preg_replace('#\s+#', '', $str);
     }
 
-    public static function mergeBlank($value)
+    /**
+     * 合并字符串中多余的空格、换行
+     *
+     * @param $str
+     * @return mixed
+     */
+    public static function mergeBlank($str)
     {
-        return preg_replace('#(\s)+#', '$1', $value);
+        return preg_replace('#(\s)+#', '$1', $str);
     }
 }
