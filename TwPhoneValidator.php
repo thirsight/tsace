@@ -17,11 +17,12 @@ class TwPhoneValidator extends \yii\validators\Validator
         $this->message = Yii::t('base', 'Invalid phone.');
     }
 
-    public function validateAttribute($model, $attribute)
+    protected function validateValue($value)
     {
-        if (!preg_match('#^09\d{8}$#i', $model->$attribute)) {
-            $model->addError($attribute, $this->message);
+        if (!preg_match('#^09\d{8}$#i', $value)) {
+            return [$this->message, []];
         }
+        return null;
     }
 
     public function clientValidateAttribute($model, $attribute, $view)
