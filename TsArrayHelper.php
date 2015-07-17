@@ -19,4 +19,19 @@ class TsArrayHelper
             }
         }
     }
+
+    /**
+     * @param array $rows
+     * @param array $columns
+     */
+    public static function getRowsColumns(Array &$rows, Array $columns)
+    {
+        foreach ($rows as $key => $row) {
+            foreach ($row as $field => $value) {
+                if (!in_array($field, $columns)) {
+                    unset($rows[$key][$field]);
+                }
+            }
+        }
+    }
 }
