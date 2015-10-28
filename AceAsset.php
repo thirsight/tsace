@@ -53,7 +53,7 @@ class AceAsset extends \ts\ace\AssetBundle
 
     public $jsEnhance = [
         // if you need cookie support and sidebar collapse/expand, fixing navbar
-        'ace-extra.js' => ['position' => View::POS_HEAD],
+        'js/ace-extra.js' => ['position' => View::POS_HEAD],
 
         'js/html5shiv.js' => ['position' => View::POS_HEAD, 'condition' => 'lte IE 8'],
         'js/respond.js' => ['position' => View::POS_HEAD, 'condition' => 'lte IE 8'],

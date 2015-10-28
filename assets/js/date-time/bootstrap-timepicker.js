@@ -259,14 +259,14 @@
       templateContent = '<table>'+
          '<tr>'+
            //'<td><a href="#" data-action="incrementHour"><i class="icon-chevron-up"></i></a></td>'+
-		   '<td><a href="#" data-action="incrementHour"><i class="'+this.iconUp+'"></i></a></td>'+//ACE
+		   '<td><a href="#" data-action="decrementHour"><i class="'+this.iconUp+'"></i></a></td>'+//ACE
            '<td class="separator">&nbsp;</td>'+
            //'<td><a href="#" data-action="incrementMinute"><i class="icon-chevron-up"></i></a></td>'+
-		   '<td><a href="#" data-action="incrementMinute"><i class="'+this.iconUp+'"></i></a></td>'+//ACE
+		   '<td><a href="#" data-action="decrementMinute"><i class="'+this.iconUp+'"></i></a></td>'+//ACE
            (this.showSeconds ?
              '<td class="separator">&nbsp;</td>'+
              //'<td><a href="#" data-action="incrementSecond"><i class="icon-chevron-up"></i></a></td>'
-			 '<td><a href="#" data-action="incrementSecond"><i class="'+this.iconUp+'"></i></a></td>'//ACE
+			 '<td><a href="#" data-action="decrementSecond"><i class="'+this.iconUp+'"></i></a></td>'//ACE
            : '') +
            (this.showMeridian ?
              '<td class="separator">&nbsp;</td>'+
@@ -289,14 +289,14 @@
          '</tr>'+
          '<tr>'+
            //'<td><a href="#" data-action="decrementHour"><i class="icon-chevron-down"></i></a></td>'+
-		   '<td><a href="#" data-action="decrementHour"><i class="'+this.iconDown+'"></i></a></td>'+//ACE
+		   '<td><a href="#" data-action="incrementHour"><i class="'+this.iconDown+'"></i></a></td>'+//ACE
            '<td class="separator"></td>'+
            //'<td><a href="#" data-action="decrementMinute"><i class="icon-chevron-down"></i></a></td>'+
-		   '<td><a href="#" data-action="decrementMinute"><i class="'+this.iconDown+'"></i></a></td>'+//ACE
+		   '<td><a href="#" data-action="incrementMinute"><i class="'+this.iconDown+'"></i></a></td>'+//ACE
            (this.showSeconds ?
             '<td class="separator">&nbsp;</td>'+
             //'<td><a href="#" data-action="decrementSecond"><i class="icon-chevron-down"></i></a></td>'
-			'<td><a href="#" data-action="decrementSecond"><i class="'+this.iconDown+'"></i></a></td>'//ACE
+			'<td><a href="#" data-action="incrementSecond"><i class="'+this.iconDown+'"></i></a></td>'//ACE
            : '') +
            (this.showMeridian ?
             '<td class="separator">&nbsp;</td>'+
